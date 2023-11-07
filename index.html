@@ -15,7 +15,7 @@
   <body>
     <!-- Navbar mulai -->
 
-    <nav class="navbar bg-warning fixed-top shadow-sm">
+    <nav class="navbar fixed-top shadow-sm">
       <div class="container">
         <a class="navbar-brand" href="https://instagram.com/bang_jarrrz"
           >BlogPribadi | Alfajjar</a
@@ -26,16 +26,19 @@
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar"
+          style="background-color: white"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon" style="color: white"></span>
         </button>
+
         <div
           class="offcanvas offcanvas-end"
           tabindex="-1"
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
+          style="background-color: rgb(0, 30, 60); margin-bottom: 20rem"
         >
-          <div class="offcanvas-header">
+          <div class="offcanvas-header" style="color: blueviolet">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
               Alfajjar Syachputra
             </h5>
@@ -49,7 +52,11 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#home"
+                  style="color: blueviolet"
                   >Home</a
                 >
               </li>
@@ -58,11 +65,16 @@
                   class="nav-link active"
                   aria-current="page"
                   href="/TentangSaya/index.html"
+                  style="color: blueviolet"
                   >Tentang Saya</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#contact"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#contact"
+                  style="color: blueviolet"
                   >Contact Me</a
                 >
               </li>
@@ -143,7 +155,7 @@
         width="200"
         class="rounded-circle img-thumbnail"
       />
-      <h1 class="display-0">
+      <h1 class="lead display-0">
         Hi<br />
         My Name Alfajjar
       </h1>
@@ -316,7 +328,7 @@
 
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="rgb(145, 255, 114)"
+          fill="rgb(0, 0, 0)"
           fill-opacity="1"
           d="M0,256L16,245.3C32,235,64,213,96,224C128,235,160,277,192,261.3C224,245,256,171,288,128C320,85,352,75,384,101.3C416,128,448,192,480,202.7C512,213,544,171,576,165.3C608,160,640,192,672,176C704,160,736,96,768,112C800,128,832,224,864,224C896,224,928,128,960,101.3C992,75,1024,117,1056,122.7C1088,128,1120,96,1152,80C1184,64,1216,64,1248,85.3C1280,107,1312,149,1344,181.3C1376,213,1408,235,1424,245.3L1440,256L1440,320L1424,320C1408,320,1376,320,1344,320C1312,320,1280,320,1248,320C1216,320,1184,320,1152,320C1120,320,1088,320,1056,320C1024,320,992,320,960,320C928,320,896,320,864,320C832,320,800,320,768,320C736,320,704,320,672,320C640,320,608,320,576,320C544,320,512,320,480,320C448,320,416,320,384,320C352,320,320,320,288,320C256,320,224,320,192,320C160,320,128,320,96,320C64,320,32,320,16,320L0,320Z"
         ></path>
@@ -337,7 +349,7 @@
           <div class="row justify-content-center">
             <div class="col-md-7">
               <form>
-                <div class="mb-3">
+                <div class="contact mb-3">
                   <label for="Name" class="form-label">Nama</label>
                   <input
                     type="text"
@@ -346,7 +358,7 @@
                     aria-describedby="name"
                   />
                 </div>
-                <div class="mb-3">
+                <div class="contact mb-3">
                   <label for="email" class="form-label">Email address</label>
                   <input
                     type="email"
@@ -355,7 +367,7 @@
                     aria-describedby="email"
                   />
                 </div>
-                <div class="mb-3">
+                <div class="contact mb-3">
                   <label for="exampleFormControlTextarea1" class="form-label"
                     >Pesan</label
                   >

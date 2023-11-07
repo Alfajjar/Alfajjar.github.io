@@ -1,5 +1,18 @@
+.navbar {
+  background-color: rgb(0, 30, 60);
+}
+
+.navbar a {
+  color: white;
+  margin-left: 30px;
+}
+
+.navbar-nav .nav-item a {
+  color: blueviolet;
+}
+
 #galeri {
-  background: linear-gradient(to left, #00000000, #ffdb6e);
+  background: linear-gradient(to bottom, rgb(0, 51, 127), rgb(0, 0, 0));
   padding-bottom: 50px;
 }
 
