@@ -135,7 +135,6 @@
     </nav>
 
     <!-- Navbar selesai -->
-
     <h1
       style="
         margin-top: 100px;
@@ -143,116 +142,138 @@
         font-family: 'Times New Roman', Times, serif;
       "
     >
+      <hr />
+      <hr />
       Sertifikat - Sertifikat Saya
+      <hr />
+      <hr />
     </h1>
 
-    <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion accordion-flush" id="accordionFlushExample">
       <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+        <h2 class="accordion-header">
           <button
-            class="accordion-button"
+            class="accordion-button collapsed"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#panelsStayOpen-collapseOne"
-            aria-expanded="true"
-            aria-controls="panelsStayOpen-collapseOne"
+            data-bs-target="#flush-collapseOne"
+            aria-expanded="false"
+            aria-controls="flush-collapseOne"
           >
-            # Sertifikat Pribadi
+            <ul>
+              <li>Sertifikat Pribadi</li>
+            </ul>
           </button>
         </h2>
         <div
-          id="panelsStayOpen-collapseOne"
-          class="accordion-collapse collapse show"
-          aria-labelledby="panelsStayOpen-headingOne"
+          id="flush-collapseOne"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionFlushExample"
         >
-          <div class="accordion-body">
-            <div
-              class="row row-cols-1 row-cols-md-3 g-4"
-              style="border-radius: 30px; margin: 3rem 3rem"
+          <div class="btn-group" style="margin: 50px">
+            <button
+              type="button"
+              class="btn btn-dark dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
             >
-              <div class="col">
-                <div class="card h-100">
-                  <img
-                    src="/img/sertiv prib1.jpg"
-                    class="card-img-top"
-                    alt="sertivprib1"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Harapan II</h5>
-                    <p class="card-text">
-                      Dalam lomba bahasa di SMP 2 Tarik Sidoarjo. Lihat Versi
-                      Lengkapnya di <a href="/img/sertiv prib1.jpg">sini</a>
-                    </p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted"
-                      >Telah diperoleh pada tahun 2019</small
-                    >
-                  </div>
+              Sertifikat Pribadi E-Learning
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <button class="dropdown-item" type="button">
+                  <a href="MySkillHTML/index.html">
+                    <div class="btn">MySkill HTML</div>
+                  </a>
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button">
+                  <a href="">
+                    <div class="btn">-</div>
+                  </a>
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item" type="button">
+                  <a href="">
+                    <div class="btn">-</div>
+                  </a>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="accordion-body row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  src="/img/sertiv prib1.jpg"
+                  class="card-img-top"
+                  alt="sertivprib1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Harapan II</h5>
+                  <p class="card-text">
+                    Dalam lomba bahasa di SMP 2 Tarik Sidoarjo. Lihat Versi
+                    Lengkapnya di <a href="/img/sertiv prib1.jpg">sini</a>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"
+                    >Telah diperoleh pada tahun 2021</small
+                  >
                 </div>
               </div>
-              <div class="col">
-                <div class="card h-100">
-                  <img src="..." class="card-img-top" alt="sertivprib2" />
-                  <div class="card-body">
-                    <h5 class="card-title">-</h5>
-                    <p class="card-text">-</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated - mins ago</small>
-                  </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="..." class="card-img-top" alt="sertivprib2" />
+                <div class="card-body">
+                  <h5 class="card-title">-</h5>
+                  <p class="card-text">-</p>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <img src="..." class="card-img-top" alt="sertivprib3" />
-                  <div class="card-body">
-                    <h5 class="card-title">-</h5>
-                    <p class="card-text">-</p>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated - mins ago</small>
-                  </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated - mins ago</small>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+        <h2 class="accordion-header">
           <button
             class="accordion-button collapsed"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#panelsStayOpen-collapseTwo"
+            data-bs-target="#flush-collapseTwo"
             aria-expanded="false"
-            aria-controls="panelsStayOpen-collapseTwo"
+            aria-controls="flush-collapseTwo"
           >
-            # Sertifikat Paskibra
+            <ul>
+              <li>Sertifikat Paskibra</li>
+            </ul>
           </button>
         </h2>
         <div
-          id="panelsStayOpen-collapseTwo"
+          id="flush-collapseTwo"
           class="accordion-collapse collapse"
-          aria-labelledby="panelsStayOpen-headingTwo"
+          data-bs-parent="#accordionFlushExample"
         >
-          <div
-            class="row row-cols-1 row-cols-md-3 g-4"
-            style="border-radius: 30px; margin: 3rem 3rem"
-          >
+          <div class="accordion-body row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-100">
                 <img
                   src="/img/sertiv paskib1.jpg"
                   class="card-img-top"
-                  alt="MySkil1"
+                  alt="sertivprib1"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Juara 2 Mula</h5>
+                  <h5 class="card-title">Juara II Mula</h5>
                   <p class="card-text">
-                    Dalam LKBB Sakti se JawaTimur. Lihat Versi Lengkap di
-                    <a href="/img/sertiv paskib1.jpg">sini.</a>
+                    Dalam LKBB Sakti se JawaTimur. Lihat Versi Lengkapnya di
+                    <a href="/img/sertiv paskib1.jpg">sini</a>
                   </p>
                 </div>
                 <div class="card-footer">
@@ -340,28 +361,29 @@
           </div>
         </div>
       </div>
+
       <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+        <h2 class="accordion-header">
           <button
             class="accordion-button collapsed"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#panelsStayOpen-collapseThree"
+            data-bs-target="#flush-collapseThree"
             aria-expanded="false"
-            aria-controls="panelsStayOpen-collapseThree"
+            aria-controls="flush-collapseThree"
           >
-            # Sertifikat ShortClass MySkill
+            <ul>
+              <li>Sertifikat ShortClass MySkill</li>
+            </ul>
           </button>
+          <hr />
         </h2>
         <div
-          id="panelsStayOpen-collapseThree"
+          id="flush-collapseThree"
           class="accordion-collapse collapse"
-          aria-labelledby="panelsStayOpen-headingThree"
+          data-bs-parent="#accordionFlushExample"
         >
-          <div
-            class="row row-cols-1 row-cols-md-3 g-4"
-            style="border-radius: 30px; margin: 3rem 3rem"
-          >
+          <div class="accordion-body row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-100">
                 <img

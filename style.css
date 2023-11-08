@@ -1,5 +1,5 @@
 .navbar {
-  background-color: rgb(0, 30, 60);
+  background-color: rgb(16, 68, 120);
 }
 
 .navbar a {
@@ -8,14 +8,14 @@
 }
 
 .navbar-nav .nav-item a {
-  color: blueviolet;
+  color: rgb(255, 255, 255);
 }
 
 .jumbotron {
   margin-top: 50px;
   background-color: rgb(255, 219, 110);
   font-family: "Times New Roman", Times, serif;
-  background: linear-gradient(to bottom, rgb(0, 51, 127), rgb(0, 0, 0));
+  background: linear-gradient(to bottom, rgb(0, 125, 255), rgb(0, 0, 0));
 }
 .lead {
   color: white;
@@ -40,12 +40,12 @@
 .nav-item a::after {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 50%;
   transform: scaleX(0);
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   transform-origin: bottom right;
   transition: transfrom 0.2s ease-out;
 }
@@ -83,6 +83,15 @@
   height: auto;
 }
 
+.dropdown-menu {
+  background-color: blueviolet;
+}
+
+.dropdown-menu a:hover {
+  background-color: blueviolet;
+  width: 50%;
+}
+
 .menu-container {
   display: flex;
   justify-content: center;
@@ -97,7 +106,7 @@
 }
 
 #contact {
-  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 51, 127));
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 120, 250));
 }
 
 .contact {
