@@ -280,8 +280,8 @@
               <img src="img/JK.png" class="card-img-top" alt="project1" />
               <div class="card-body">
                 <p class="card-text">
-                  Saya telah sukses membuat sebuah website cafe. Apabila ingin
-                  melihat website saya kunjungi
+                  Saya telah berhasil membuat sebuah website cafe. Apabila ingin
+                  melihat template websitenya, kunjungi bio
                   <a href="https://instagram.com/bang_jarrrz">Instagram saya</a>
                 </p>
               </div>
@@ -292,8 +292,8 @@
               <img src="img/DEB.png" class="card-img-top" alt="project2" />
               <div class="card-body">
                 <p class="card-text">
-                  Saya juga telah sukses membuat website tutorial debian 11.
-                  Apabila ingin melihat website saya kunjungi
+                  Saya juga telah berhasil membuat website tutorial debian 11.
+                  Apabila ingin source code website saya, kunjungi bio
                   <a href="https://instagram.com/bang_jarrrz">Instagram saya</a>
                 </p>
               </div>
@@ -305,7 +305,7 @@
               <div class="card-body">
                 <p class="card-text">
                   Simulasi pembelian kuota internet menggunakan Python. Apabila
-                  ingin melihat project saya kunjungi
+                  ingin melihat source code, kunjungi bio
                   <a href="https://instagram.com/bang_jarrrz">Instagram saya</a>
                 </p>
               </div>
@@ -316,8 +316,8 @@
               <img src="img/ATM.png" class="card-img-top" alt="project3" />
               <div class="card-body">
                 <p class="card-text">
-                  Simulasi ATM menggunakan Python. Apabila ingin melihat project
-                  saya kunjungi
+                  Simulasi ATM menggunakan Pyth on. Apabila ingin melihat source
+                  code, kunjungi bio
                   <a href="https://instagram.com/bang_jarrrz">Instagram saya</a>
                 </p>
               </div>
@@ -338,7 +338,7 @@
     <!-- Keahlian Selesai -->
 
     <!-- Kontak Mulai -->
-    
+
     <section id="contact" style="background-color: #ffdb6e">
       <div class="container">
         <div class="row">
@@ -348,6 +348,37 @@
           </div>
           <div class="row justify-content-center">
             <div class="col-md-7">
+              <!-- Alert Terima kasih -->
+              <div
+                class="alert alert-success alert-dismissible fade show d-none alert-thanks"
+                role="alert"
+              >
+                <strong>Terima kasih !</strong> Pesan anda telah terkirim, dan
+                akan kami baca sesegera mungkin.
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="alert"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <!-- Alert Menunggu -->
+
+              <div
+                class="alert alert-primary alert-dismissible fade show d-none alert-wait"
+                role="alert"
+              >
+                <strong>Mohon tunngu sebentar !</strong> Pesan anda sedang di
+                kirim.
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="alert"
+                  aria-label="Close"
+                ></button>
+              </div>
+
               <form name="contact-form">
                 <div class="contact mb-3">
                   <label for="Name" class="form-label">Nama</label>
@@ -384,7 +415,7 @@
                   type="submit"
                   name="submit"
                   value="yes"
-                  class="btn btn-dark mb-5"
+                  class="btn btn-dark mb-5 btn-kirim"
                 >
                   Kirim
                 </button>
@@ -406,11 +437,21 @@
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbywVNcAfNqQNfEeyjHxr5cbC0Ztgb4wJWaunQQ3_vxv8hx2fGKt_EbGer6RBCIDRmmX/exec";
       const form = document.forms["contact-form"];
+      const alertThanks = document.querySelector(".alert-thanks");
+      const alertWait = document.querySelector(".alert-wait");
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
+
+        alertWait.classList.toggle("d-none");
+
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => console.log("Success!", response))
+          .then((response) => {
+            alertWait.classList.toggle("d-none");
+            alertThanks.classList.toggle("d-none");
+            form.reset();
+            console.log("Success!", response);
+          })
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
