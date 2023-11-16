@@ -19,6 +19,10 @@
 }
 .lead {
   color: white;
+  padding: 20px;
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 2px 5px 1px rgb(0, 0, 0);
 }
 .jumbotron img {
   margin-top: 50px;

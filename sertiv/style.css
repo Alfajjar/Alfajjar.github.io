@@ -8,7 +8,7 @@
 }
 
 .navbar-nav .nav-item a {
-  color: blueviolet;
+  color: rgb(255, 255, 255);
 }
 
 .nav-item a {
@@ -23,7 +23,7 @@
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   transform-origin: bottom right;
   transition: transfrom 0.2s ease-out;
 }
@@ -31,6 +31,12 @@
 .nav-item a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+  width: 50%;
+}
+
+.dropdown-menu a:hover {
+  background-color: blueviolet;
+  width: 50%;
 }
 
 .accordion-button {
