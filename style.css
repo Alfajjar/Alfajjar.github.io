@@ -11,6 +11,12 @@
   color: rgb(255, 255, 255);
 }
 
+.sosmed {
+  width: auto;
+  height: 120px;
+  overflow: scroll;
+}
+
 .jumbotron {
   margin-top: 50px;
   background-color: rgb(255, 219, 110);
