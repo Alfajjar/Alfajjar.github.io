@@ -11,6 +11,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- Navbar mulai -->
@@ -164,7 +166,7 @@
 
     <!-- Profil mulai -->
 
-    <section class="jumbotron text-center line" id="home">
+    <section class="jumbotron text-center line" id="home" data-aos="fade-up" data-aos-duration="2000">
       <img
         src="img/profil.jpg"
         alt="Profil"
@@ -189,13 +191,13 @@
 
     <section class="line" id="about">
       <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <h2 style="margin: 40px; color: rgb(0, 0, 0)">Tentang Saya</h2>
+        <div class="row"> 
+          <div class="col text-center" data-aos="fade-down" data-aos-duration="2000" >
+            <h2 style="margin: 40px; color: rgb(0, 0, 0);">Tentang <span style="border-bottom: 1px solid #000;">Saya</span></h2>
           </div>
         </div>
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="2000">
           <div class="col-md-4">
             <p style="color: rgb(0, 0, 0)">
               Kepribadian saya adalah perbaduan yang menarik antara sifat
@@ -215,38 +217,13 @@
             Nama : Mochammad Alfajjar Syachputra<br />
             Umur : 16 Tahun<br />
             Status : Masih menempuh pendidikan<br />
-            Alamat : Dsn Songgat, Ds Gampingrowo, Kec.Tarik, Kab.Sidoarjo,
-            Prov.JawaTimur<br />
+            Alamat : Kab.Sidoarjo, Prov.JawaTimur<br />
             Pekerjaan : Belum bekerja<br />
           </div>
         </div>
       </div>
 
-      <div class="container" style="margin: 100px auto">
-        <marquee>
-          <div
-            class="row"
-            style="justify-content: center; align-items: center; display: flex"
-          >
-            <div class="col-md-4 mb-4 text-center">
-              <img
-                src="/img/foto1.jpg"
-                alt="Profil"
-                width="300"
-                class="rounded-circle img-thumbnail"
-              />
-            </div>
-            <div class="col-md-4 mb-4 text-center">
-              <img
-                src="/img/foto2.jpg"
-                alt="Profil"
-                width="300"
-                class="rounded-circle img-thumbnail"
-              />
-            </div>
-          </div>
-        </marquee>
-      </div>
+      <p style="margin-bottom: 150px;"></p>
     </section>
 
     <!-- About selesai -->
@@ -260,10 +237,10 @@
         data-bs-ride="carousel"
       >
         <h1
-          class="card text-center"
+          class="text-center"
           style="font-family: 'Times New Roman', Times, serif"
         >
-          Skill Saya
+          My Skill
         </h1>
         <div class="carousel-indicators">
           <button
@@ -351,16 +328,16 @@
         <div class="continer">
           <div class="row text-center mb-4">
             <div class="col">
-              <h2 class="card">Project - project saya</h2>
+              <h2>My Project</h2>
             </div>
           </div>
           <div class="row">
             <div class="col-md-4 mb-3">
-              <div class="card">
-                <img src="img/JK.png" class="card-img-top" alt="project1" />
+              <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+                <img src="img/Cafe.png" class="card-img-top" alt="project1" />
                 <div class="card-body">
                   <p class="card-text">
-                    Saya telah berhasil membuat sebuah website cafe. Apabila
+                    Saya telah selesai membuat sebuah website cafe. Apabila
                     ingin melihat template websitenya, kunjungi bio
                     <a href="https://instagram.com/bang_jarrrz"
                       >Instagram saya</a
@@ -370,11 +347,11 @@
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card" data-aos="zoom-in" data-aos-duration="2000">
                 <img src="img/DEB.png" class="card-img-top" alt="project2" />
                 <div class="card-body">
                   <p class="card-text">
-                    Saya juga telah berhasil membuat website tutorial debian 11.
+                    Saya juga telah membuat website tutorial debian 11.
                     Apabila ingin source code website saya, kunjungi bio
                     <a href="https://instagram.com/bang_jarrrz"
                       >Instagram saya</a
@@ -384,7 +361,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card" data-aos="zoom-in" data-aos-duration="2000">
                 <img src="img/PY.png" class="card-img-top" alt="project3" />
                 <div class="card-body">
                   <p class="card-text">
@@ -398,7 +375,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card" data-aos="zoom-in" data-aos-duration="2000">
                 <img src="img/ATM.png" class="card-img-top" alt="project3" />
                 <div class="card-body">
                   <p class="card-text">
@@ -412,7 +389,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <div class="card">
+              <div class="card" data-aos="zoom-in" data-aos-duration="2000">
                 <img src="img/signIn-signUp.jpg" class="card-img-top" alt="project4" width="150px" />
                 <div class="card-body">
                   <p class="card-text">
@@ -423,6 +400,12 @@
                   </p>
                 </div>
               </div>
+            </div>
+
+            <div class="show-project" data-aos="fade-down" data-aos-duration="2000">
+              <a href="#">
+                <button>Show Project</button>
+              </a>
             </div>
           </div>
         </div>
@@ -443,7 +426,7 @@
 
     <section id="contact">
       <div class="container">
-        <div class="row">
+        <div class="row" data-aos="fade-down" data-aos-duration="2000">
           <div class="coloumn">
             <h2 class="contact">Hubungi Saya</h2>
             <div class="About line"></div>
@@ -570,6 +553,11 @@
           })
           .catch((error) => console.error("Error!", error.message));
       });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

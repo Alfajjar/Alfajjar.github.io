@@ -84,6 +84,7 @@ span {
 .card {
   margin: 10px 20px;
   display: flexbox;
+  box-shadow: 10px 10px 10px #000;
 }
 
 .skill-menu {
@@ -102,6 +103,26 @@ span {
 .skill-card img {
   max-width: 100%;
   height: auto;
+}
+
+.show-project{
+  text-align: center;
+  margin: 40px 0px;
+}
+
+.show-project button {
+  padding: 10px 40px;
+  border: none;
+  background: #222;
+  color: white;
+  border-radius: 10px;
+}
+
+.show-project:hover button {
+  background: blueviolet;
+  transform: scale(1.1);
+  transition: all ease-in-out;
+  transition-duration: 1.2s;
 }
 
 .dropdown-menu {
